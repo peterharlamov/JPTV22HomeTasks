@@ -45,7 +45,7 @@ public class App {
                     break;
                 case 3:
                     WeatherInYear yearsWeather = new WeatherInYear(scanner);
-                    yearsWeather.runTask();
+                    yearsWeather.run();
                 default:
                     System.out.println("Выберите номер из списка задач!");
                     break;
