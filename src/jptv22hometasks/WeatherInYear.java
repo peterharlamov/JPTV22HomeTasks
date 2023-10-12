@@ -24,7 +24,7 @@ public class WeatherInYear {
         this.scanner = scanner;
     }
 
-    public void runTask() {
+    public void run() {
         Random random = new Random();
         int min = -30;
         int max = 40;
