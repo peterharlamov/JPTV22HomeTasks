@@ -26,7 +26,8 @@ public class App {
             System.out.println("Выберите номер задачи из списка: ");
             System.out.println("0. Выход из программы");
             System.out.println("1. Конвертер температуры");
-            System.out.println("2. Парсер числа");
+            System.out.println("2. Парсер");
+            System.out.println("3. Погода за год");
             System.out.println("№ задачи: ");
             int task = this.scanner.nextInt(); scanner.nextLine();
             switch (task) {
@@ -42,6 +43,9 @@ public class App {
                     NumberParser numberParser = new NumberParser(scanner);
                     numberParser.doParse();
                     break;
+                case 3:
+                    WeatherInYear yearsWeather = new WeatherInYear(scanner);
+                    yearsWeather.runTask();
                 default:
                     System.out.println("Выберите номер из списка задач!");
                     break;
